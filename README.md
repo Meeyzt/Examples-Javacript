@@ -2,7 +2,9 @@
 
 My javascript Examples
 
-## Fibonacci is my first example
+## Example-1
+
+> Fibonacci
 
 ## Example-2
 
@@ -10,7 +12,7 @@ My javascript Examples
 
 ## Example-3
 
-> Not Defined
+> JSON Filter
 
 ## Example-4
 

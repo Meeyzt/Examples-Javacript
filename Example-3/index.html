@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSON Filter</title>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <!--<div class="wrapper">
+      <button onclick="fetchData()">Getir</button>
+      <button
+        onclick="filterData('isActive')"
+        id="filterButton"
+        style="display: none"
+      >
+        Filtrele
+      </button>
+      <ul class="list"></ul>
+    </div>-->
+  <body>
+    <div
+      class="
+        d-flex
+        flex-row-reverse
+        bd-highlight
+        mb-3
+        d-flex-bgcolor
+        justify-content-between
+      "
+    >
+      <div class="d-flex flex-column bd-highlight flex-r-bg-color">
+        <div class="container mt-4">
+          <div class="row">
+            <div class="col">
+              <div class="form-input">
+                <label class="form-label color-white" for="letter"
+                  >Bir harf giriniz.</label
+                >
+                <input
+                  type="text"
+                  name="letter"
+                  id="letter"
+                  class="form-control"
+                  placeholder="a letter"
+                  maxlength="1"
+                />
+              </div>
+              <div class="form-group mt-4 light">
+                <label class="form-label block color-white">Filter</label>
+              </div>
+              <div class="form-group">
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="filter"
+                    id="isActive"
+                    value="isActive"
+                  />
+                  <label class="form-check-label color-white" for="isActive"
+                    >isActive</label
+                  >
+                </div>
+                <div class="form-check form-check-inline mb-4">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="filter"
+                    id="adult"
+                    value="Adult"
+                  />
+                  <label class="form-check-label color-white" for="adult"
+                    >Adult</label
+                  >
+                </div>
+              </div>
+              <div class="form-group mb-4 ml-3">
+                <button
+                  class="btn btn-success color-darkslategray"
+                  onclick="fetchData()"
+                >
+                  Getir
+                </button>
+                <button
+                  id="filterButton"
+                  class="btn btn-warning color-darkslategray"
+                >
+                  Filtrele
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex flex-column bd-highlight flex-grow-1 margin-left">
+        <table class="table table-dark table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Age</th>
+              <th scope="col">City</th>
+              <th scope="col">Active</th>
+            </tr>
+          </thead>
+          <tbody class="dataList">
+            <tr>
+              <th scope="row">Name</th>
+              <td>Age</td>
+              <td>City</td>
+              <td>Active</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="d-flex flex-column bd-highlight"></div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
